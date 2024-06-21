@@ -5,16 +5,20 @@ body {
 h1 {
     color: red;
     margin-left: 20px;
+    font-family: Trattatello;
 }
 h2 {
-    color: rgb(219, 186, 18);
+    color: purple;
     margin-left: 20px;
+    font-family: Luminari;
 }
 h3 {
-    color: yellow;
+    color: blue;
     margin-left: 20px;
+    font-family: Apple Chancery;
 }
 p {
     color: maroon;
     margin-left: 20px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
 }
