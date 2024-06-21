@@ -1,0 +1,35 @@
+// Get the canvas element and its context
+const canvas = document.getElementById('gameCanvas');
+const ctx = canvas.getContext('2d');
+
+// Game variables
+let birdX = 50; // Initial X position of the bird
+let birdY = canvas.height / 2; // Initial Y position of the bird
+let gravity = 0.7; // Gravity to pull the bird down
+let jumpStrength = 12; // Strength of jump when spacebar is pressed
+
+// Event listener for jumping
+document.addEventListener('keydown', function(event) {
+    if (event.code === 'Space') {
+        birdY -= jumpStrength;
+    }
+});
+
+// Game loop function
+function gameLoop() {
+    // Clear canvas
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Draw bird
+    ctx.fillStyle = 'yellow';
+    ctx.fillRect(birdX, birdY, 20, 20);
+
+    // Apply gravity to bird's Y position
+    birdY += gravity;
+
+    // Call gameLoop function recursively
+    requestAnimationFrame(gameLoop);
+}
+
+// Start the game loop
+gameLoop();
