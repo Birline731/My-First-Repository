@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Change Image Example</title>
-</head>
-<body>
-    <h2>Change Image Example</h2>
-    <img id="myImage" src="mykingcurry.jpg" alt="Original Image">
-    <br>
-    <button onclick="changeImage()">Change Image</button>
 
-    <script src="myScript.js"></script>
-</body>
-</html>
 function myFunction() {
     document.getElementById("demo").innerHTML="kidus sucks at basketball.";
 }
