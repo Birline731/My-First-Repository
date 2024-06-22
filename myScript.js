@@ -3,9 +3,13 @@ function myFunction() {
 }
 
 
-// Function to change the image
-function changeImage() {
-  var image = document.getElementById('myImage');
-    image.src = 'https://i.etsystatic.com/33206174/r/il/2f797c/3581278854/il_fullxfull.3581278854_nv7b.jpg';  // Replace with your second image path
+// script.js
 
+function changeImage() {
+    var image = document.getElementById('myImage');
+    if (image.src.match('mykingcurry.jpg')) {
+        image.src = 'https://m.media-amazon.com/images/I/51d23FXg2PL._AC_UF894,1000_QL80_.jpg';  // Replace with the path to your new image
+    } else {
+        image.src = 'mykingcurry.jpg';  // Restore original image
+    }
 }
